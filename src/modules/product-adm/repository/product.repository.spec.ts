@@ -1,4 +1,4 @@
-import { Sequelize } from "sequelize-typescript"
+import { Sequelize, UpdatedAt } from "sequelize-typescript"
 import Id from "../../@shared/domain/value-object/id.value-object";
 import Product from "../domain/product.entity";
 import { ProductModel } from "./product.model";
@@ -46,4 +46,28 @@ describe("ProductRepository test", () => {
     expect(productProps.purchasePrice).toEqual(productDb.purchasePrice);
     expect(productProps.stock).toEqual(productDb.stock);
   })
+
+
+  it("should find a product", async() => {
+    const productRepository = new ProductRepository();
+
+    ProductModel.create({
+      id: "1",
+      name: "Product 1",
+      description: "Product 1 description",
+      purchasePrice: 100,
+      stock: 10,
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    })
+
+    
+    const product = await productRepository.find("1");
+
+    expect(product.id.id).toEqual("1");
+    expect(product.name).toEqual("Product 1");
+    expect(product.description).toEqual("Product 1 description");
+    expect(product.purchasePrice).toEqual(100);
+    expect(product.stock).toEqual(10);
+  });
 });
