@@ -1,4 +1,3 @@
-import { toNumber } from "lodash";
 import Id from "../../../@shared/domain/value-object/id.value-object";
 import Product from "../../domain/product.entity";
 import CheckStockUseCase from "./check-stock.usecase";
@@ -19,7 +18,7 @@ const MockRepository = () => {
   };
 };
 
-describe("Check stock usecase unit test", () => {
+describe("Check Stock usecase unit test", () => {
 
 
   it('should get stock of a product', async () => {
