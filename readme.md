@@ -39,7 +39,7 @@ haver uma Facade entre a comunicação entre os módulos.
 para instalar o projeto e rodar os testes basta executar 
 
 ```
-npm install -- dev
+npm install
 ```
 
 ## Rodar os testes
