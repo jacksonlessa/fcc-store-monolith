@@ -33,7 +33,7 @@ haver uma Facade entre a comunicação entre os módulos.
 
 # Como Executar
 
-É Necessário no mínimo a versão v14.17.1 do Node para executar o Projeto
+É Necessário no mínimo a versão v16.18.1 do Node para executar o Projeto
 
 ## Instalar o projeto
 para instalar o projeto e rodar os testes basta executar 
@@ -57,4 +57,3 @@ npm test
 - Finalizar módulo Invoice
 - Disponibilizar UseCases Via API
 - Disponibilizar um DockerFile para o Projeto
-- 
