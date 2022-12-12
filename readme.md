@@ -57,4 +57,3 @@ npm test
 - Finalizar módulo Invoice
 - Disponibilizar UseCases Via API
 - Disponibilizar um DockerFile para o Projeto
-- 
