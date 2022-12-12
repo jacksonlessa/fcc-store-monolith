@@ -1,28 +1,30 @@
-# Store Monolith with DDD
+# Order Service Monolith with DDD
 
-Projeto de uma de um emissor de pedidos criada em forma de monolito, porem pensando nos princípios do DDD e Solid
+This is a project of a Order maker service, following a monolith strategy,
+however thinking in a DDD approach so in the future is easy to transform 
+part of the project into a separated service
 
-O que está sendo exercitado:
+Used technologist:
 - DDD
 - Node 
 - Typescript
 - Jest
 
-## Requisitos
-### Requisitos Funcionais
+## Requirements
+### Functional Requirements
 
-- Administração de produtos
-- Criação de clientes
-- Emissão de pedidos
-### Requisitos Não Funcionais
+- Products Administration
+- Clients creation
+- Issuance of orders
+### Non-Functional Requirements
 
-- O Sistema deve ser criado em módulos desacoplados de forma a ser 
-fácil substituir ou transformar em um serviço
-- Um módulo não pode se comunicar diretamente com outro modulo dever 
-haver uma Facade entre a comunicação entre os módulos.
+- The System must be created in decoupled modules in order to be
+easy to replace or turn into a service
+- A module cannot communicate directly with another module, there 
+must be a Facade between the modules.
 
 
-## Contextos
+## Contexts
 
 - product-adm
 - store-catalog
@@ -31,29 +33,27 @@ haver uma Facade entre a comunicação entre os módulos.
 - payment
 - invoice
 
-# Como Executar
+# How to Running
+Node version v16.18.1 is required at least to run the Project
 
-É Necessário no mínimo a versão v16.18.1 do Node para executar o Projeto
-
-## Instalar o projeto
-para instalar o projeto e rodar os testes basta executar 
+## Instal de project
 
 ```
 npm install
 ```
 
-## Rodar os testes
+## Run tests
 
 ```
 npm test
 ```
 
 
-# Próximos Passos
+# Next Steps
 
-- Finalizar módulo Customer-Adm
-- Finalizar módulo Checkout
-- Finalizar módulo Payment
-- Finalizar módulo Invoice
-- Disponibilizar UseCases Via API
-- Disponibilizar um DockerFile para o Projeto
+- Finalize Customer-Adm module
+- Finalize Checkout module
+- Finalize Payment module
+- Finalize Invoice module
+- Make facades available via API
+- Make a DockerFile available to the Project
